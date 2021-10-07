@@ -16,6 +16,7 @@ h2{
 
 ul>li{
     font-size: 2vw;/*using relative units to discribe the size of list under unordered list fonts*/
+    margin:auto
 }
 
 p+a{
