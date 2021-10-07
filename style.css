@@ -1,6 +1,40 @@
-body{
-    color:red;
+
+h2{
+    color:green;/*apply colors based on color name*/
+    font-size: 30px;/*using absolute units to discribe the size of h2 fonts*/
 }
-h1{
+.class1{
+    color: rgb(100,5,20);/*apply colors based on rgb alpha values to a class*/
+    font-size: 2cm;/*using absolute units to discribe the size of class 1 fonts*/
+}
+#text{
+    font-size: 3mm;/*using absolute units to discribe the size of text id fonts*/
+}
+
+ul>li{
+    font-size: 2vw;/*using relative units to discribe the size of list under unordered list fonts*/
+}
+
+p+a{
+    font-size: 1em;/*using relative units to discribe the size of a elements after paragrah fonts*/
+}
+
+[title*="Pomodoro Timer First Brainstorm"]{
+    color: black;/*apply colors based on color name to a the the attributes title contain a specific text*/
+    font-size: 2ch;/*using relative units to discribe the size of class 1 fonts*/
+}
+input:focus,input:hover{
+    box-shadow: 2px 2px 1px red;/*create box shadow on textboxes*/
+
+}
+summary ~ p{
+    color:green;
+    font-size: 5ch;/*using relative units to discribe the size of paragraph under summary fonts*/
+}
+
+details summary{
+    color:purple;
+}
+main.h3{
     color:green;
 }
