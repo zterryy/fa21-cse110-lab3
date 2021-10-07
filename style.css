@@ -9,6 +9,9 @@ h2{
 }
 #text{
     font-size: 3mm;/*using absolute units to discribe the size of text id fonts*/
+    max-width: 500px;
+    height: 100px;
+    background-color: yellow;
 }
 
 ul>li{
@@ -30,11 +33,73 @@ input:focus,input:hover{
 summary ~ p{
     color:green;
     font-size: 5ch;/*using relative units to discribe the size of paragraph under summary fonts*/
+    text-decoration: line-through;/*create a decoration line through this part of the text*/
 }
 
 details summary{
     color:purple;
+    text-align: right;/*align the text to the right*/
 }
 main.h3{
     color:green;
 }
+li{
+    display: inline;/*display the list in the same line*/
+}
+#hidden{
+    display: none;/*hidden heading*/
+    min-width: 100%;
+}
+#sizing {
+    height: 50px;
+    width: 50%;/*set the size*/
+    background-color: powderblue;
+    position:static/*set the position to static*/
+  }
+ #sticky{
+    position: -webkit-sticky;
+    position: sticky;/*make this stick on the top of the page when scrolling down*/
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+ }
+ a:hover {
+    color: #FF00FF;/*change color when hovering*/
+  }
+  
+  
+  a:active {
+    color: #0000FF;/*change color when active*/
+  }
+
+  #flexbox{/*created a flexbox*/
+      display: flex;
+      background-color: #cae8ca;
+  }
+  #flexbox > div{/*set different values of the element in the flexbox*/
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+  #grid{/*created a grid*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color:teal;
+    padding: 10px;
+  }
+  #grid > div{/*set different values of the element in the flexbox*/
+    background-color: rgba(255, 255, 255, 0.8);
+}
+@media only screen and (max-width: 480px) {/*change the displays on mobile devices*/
+    * {
+      width: 100%;
+    }
+  }
+
+  @font-face {
+    font-family: "myFont";
+    src: Documents/fa21/cse110/fa21-cse110-lab3;
+  }
